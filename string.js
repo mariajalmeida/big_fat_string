@@ -38,5 +38,19 @@ function loadOutput() {
             console.log("false");
             finalResut.textContent = "This is not a photo";
         }
+    } else if (input == "6") {
+        // const words = inputText.length;
+        // console.log(words, "words")
+        // console.log(input.replaceAll(words, "*"));
+    } else if (input == "7") {
+        let result = inputText.substring(0, 2) + inputText.substring(2, 3).toUpperCase() + inputText.substring(3);
+        finalResut.textContent = result;
+    } else if (input == "8") {
+        if (inputText.includes("-") || inputText.includes(" ")) {
+            let dash = inputText.indexOf("-");
+            let space = inputText.indexOf(" ");
+            result = inputText.substring(dash + 1).charAt(0).toUpperCase() + inputText.substring(space + 1).charAt(0).toUpperCase();
+            finalResut.textContent = inputText.substring(0, result);
+        }
     }
 }
