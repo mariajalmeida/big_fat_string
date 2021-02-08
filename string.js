@@ -15,7 +15,14 @@ function loadOutput() {
 
     if (input == "1") {
         let result = inputText.substring(0, 1).toUpperCase() + inputText.substring(1).toLowerCase();
-        console.log(result);
         finalResut.textContent = result;
+    } else if (input == "2") {
+        let name = inputText.indexOf(" ");
+        result = inputText.substring(0, name);
+        finalResut.textContent = result;
+    } else if (input == "3") {
+        let name = inputText.indexOf(" ");
+        result = inputText.substring(0, name);
+        finalResut.textContent = result.length;
     }
 }
