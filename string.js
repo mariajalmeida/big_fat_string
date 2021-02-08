@@ -29,5 +29,14 @@ function loadOutput() {
         let lastSpace = inputText.lastIndexOf(" ");
         result = inputText.substring(firstSpace + 1, lastSpace);
         finalResut.textContent = result;
+    } else if (input == "5") {
+        result = inputText.endsWith(".png") + inputText.endsWith(".jpg");
+        if (result) {
+            console.log("true");
+            finalResut.textContent = "This is a photo";
+        } else {
+            console.log("false");
+            finalResut.textContent = "This is not a photo";
+        }
     }
 }
