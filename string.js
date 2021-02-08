@@ -24,5 +24,10 @@ function loadOutput() {
         let name = inputText.indexOf(" ");
         result = inputText.substring(0, name);
         finalResut.textContent = result.length;
+    } else if (input == "4") {
+        let firstSpace = inputText.indexOf(" ");
+        let lastSpace = inputText.lastIndexOf(" ");
+        result = inputText.substring(firstSpace + 1, lastSpace);
+        finalResut.textContent = result;
     }
 }
