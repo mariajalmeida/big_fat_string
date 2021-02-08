@@ -7,34 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Big fat string</title>
     <style>
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 640px;
-            flex-wrap: wrap;
+        .input {}
+
+        input {
+            width: 640px;
         }
     </style>
 </head>
 
 <body>
-    <form>
-        <input type="input" id="output">
-        <label for="input"></label>
-        <select id="input" name="input">
-            <option value="1">If input is a first name: Make the first character in a name uppercase, and the rest
-                lowercase</option>
-            <option value="2">If input is a full name: Find the first name</option>
-            <option value="3">If input is a full name: Find the length of the first name</option>
-            <option value="4">If input is a full name: Find the middle name start and end position, and the middle name
-                itself in a full name string</option>
-            <option value="5">If input is a filename: Check if a filename is .png or .jpg</option>
-            <option value="6">If input is a password: Hide a password with the correct number of *s</option>
-            <option value="7">With any input: Make the third character uppercase</option>
-            <option value="8">With any input: Make a character uppercase, if it follows a space or a hyphen</option>
-        </select>
+    <div>
+        <div class="input">
+            <label for="input">Input:</label>
+            <input type="input" id="inputtext">
+            <select id="input" name="input">
+                <option value="1">If input is a first name: Make the first character in a name uppercase, and the rest
+                    lowercase</option>
+                <option value="2">If input is a full name: Find the first name</option>
+                <option value="3">If input is a full name: Find the length of the first name</option>
+                <option value="4">If input is a full name: Find the middle name start and end position, and the middle
+                    name
+                    itself in a full name string</option>
+                <option value="5">If input is a filename: Check if a filename is .png or .jpg</option>
+                <option value="6">If input is a password: Hide a password with the correct number of *s</option>
+                <option value="7">With any input: Make the third character uppercase</option>
+                <option value="8">With any input: Make a character uppercase, if it follows a space or a hyphen</option>
+            </select>
+        </div>
+        <div id="output">
+            <label for="input">Output:</label>
+        </div>
         <button>Generate output</button>
-    </form>
-    <script src="index.js"></script>
+    </div>
+    <script src="string.js"></script>
 </body>
 
 </html>
